@@ -35,17 +35,11 @@ Installing Rust:
 To install dependencies correctly, you need to edit the Cargo.toml file:
 
 [dependencies]
-
 actix-web = "4"
-
 serde = { version = "1.0", features = ["derive"] }
-
 openssl-sys = "0.9.92"
-
 openssl = "0.10.57"
-
 request = "0.9.24"
-
 base64 = "0.21.3"
 
 The text of the Rust program is contained in the file **src/main.rs**.
