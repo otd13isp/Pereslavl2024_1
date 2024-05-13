@@ -58,46 +58,75 @@ Create a subdirectory **html** in it.
 The file **plot.html** (server start page) is located in the **public/html** subdirectory and is intended for visualization.
 
 Installing R under Fedora is standard:
+
 \# dnf install R
+
 Installing the RStudio graphical development environment:
+
 \# dnf install rstudio-desktop
+
 \# dnf install rstudio-server
 
 Installing the necessary packages in RStudio
+
 \> install.packages("plumber")
+
 \> install.packages("ggplot2")
+
 \> install.packages("png")
 
 Uploadoading the **plot.R** file
 Enter the command in RStudio console:
+
 \> r <- plumb("/home/… /plot.R")
+
 If the command throws an error an error, try to upload plumber manually
+
 \> library(plumber)
+
 If this does not help, then install the packages in Fedora
+
 \#dnf install libcurl-devel
+
 \# dnf install libsodium
+
 \# dnf install libsodium-devel
+
 and try again
+
 \> r <- plumb("/home/… /plot.R")
+
 The file **plot.R** will be uploaded
+
 Start the R server using port 8000.
+
 \> r$run(port=8000)
 
 Install Node.js by running the command
+
 \#dnf install nodejs
+
 Install the npm package manager if the previous command did not install it
+
 \# dnf install npm
+
 Install the pm2 process manager:
+
 \# npm install pm2 -g
 
 ## Usage
 R is started from the **R** subdirectory using the **R/start.sh** file with the command
+
 \$ ./start.sh
+
 Rust is started from the project directory using the command
+
 \$ cargo run
+
 Open your browser. Enter the address: localhost:8080. Click the "Start" button.
 The screen will present the data obtained from R.
 
 
 ## License
+
 MIT
