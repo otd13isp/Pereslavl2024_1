@@ -50,7 +50,11 @@ base64 = "0.21.3"
 
 The text of the Rust program is contained in the file **src/main.rs**.
 
-Create a subdirectory **public** in the project directory. Create a subdirectory **html** in it.
+
+Create a subdirectory **public** in the project directory. 
+
+Create a subdirectory **html** in it.
+
 The file **plot.html** (server start page) is located in the **public/html** subdirectory and is intended for visualization.
 
 Installing R under Fedora is standard:
