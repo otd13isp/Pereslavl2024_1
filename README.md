@@ -22,7 +22,9 @@ The application is free software.
 ## Installation
 Installation on Linux (Fedora) is performed with administrator rights.
 Run the commands to install openssl:
+
 \# dnf install openssl
+
 \# dnf install pkg-config perl-FindBin openssl-devel
 
 To run the project you need to install Rust.
