@@ -29,6 +29,7 @@ Run the commands to install openssl:
 
 To run the project you need to install Rust.
 Installing Rust:
+
 \# dnf install rust cargo
 
 To install dependencies correctly, you need to edit the Cargo.toml file:
